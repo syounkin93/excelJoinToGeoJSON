@@ -33,3 +33,7 @@ now install matplot lib, except version 1.3.0. This version is on the conda repo
 
 conda install matplotlib=1.3.0
 
+Now we need to let arcgis find anaconda and anaconda find arcgis. This is accomplished through .pth files placed in the site-packages directory as shown below.
+
+
+
