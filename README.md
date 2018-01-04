@@ -35,5 +35,18 @@ conda install matplotlib=1.3.0
 
 Now we need to let arcgis find anaconda and anaconda find arcgis. This is accomplished through .pth files placed in the site-packages directory as shown below.
 
+Anaconda Python to ArcPy
+Copy the Desktop10.x.pth file to the Anaconda environment site-packages folder:
+From: C:\Python27\ArcGIS10.x\Lib\site-packages\Desktop10.x.pth
+To: C:\Anaconda2\envs\arc10x\Lib\site-packages\Desktop10.x.pth
+Arcpy to Anaconda Python
+Create a zconda.pth (path) file with the content "C:\Anaconda\envs\arc104\lib\site-packages" in it.
+Then copy zconda.pth to C:\Python27\ArcGIS10.x\Lib\site-packages
+Testing in ArcMap
+As a regular user, start ArcMap, open the Python window
+type "import pysal"
+type "pysal." A popup menu with a list of pysal-provided functions is a pretty good sign the installation succeeded.
 
+Also, this project uses the pygeoj package which should be installed:
+conda install pygeoj
 
